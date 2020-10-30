@@ -2,7 +2,7 @@ function f(x)
     return 10 * x - x^2
 end
 
-function integral(menor, maior, intervalo)
+function simps(menor, maior, intervalo)
     sum = 0
     h = (maior - menor) / intervalo
     for i = 1:intervalo - 1
@@ -13,5 +13,5 @@ function integral(menor, maior, intervalo)
     return sum
 end
 
-result = integral(0, 10, 5)
+result = simps(0, 10, 5)
 println("Valor: ", result)
